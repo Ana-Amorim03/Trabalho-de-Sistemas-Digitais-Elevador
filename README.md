@@ -1,26 +1,26 @@
-# Trabalho-de-Sistemas-Digitais-Elevador
-Este trabalho teve como objetivo colocar em prática os conhecimentos adquiridos durante as aulas do Laboratório de Sistemas Digitais além de explorar a interação do FPGA e do kit Altera DE2 com o mundo físico.
+# Digital-Systems-Elevator-Project
+This project aimed to put into practice the knowledge acquired during the Digital Systems Laboratory classes, as well as to explore the interaction between the FPGA and the Altera DE2 kit with the physical world.
 
-Foi desenvolvido o projeto de um elevador de papelão de 3 andares controlado pelo FPGA e por um Arduino Due. O código voltado para o FPGA foi escrito em VHDL a partir do software Quartus II, já o código do Arduino foi escrito em C++ utilizando o Arduino IDE. A comunicação entre eles foi realizada a partir das portas GPIO do kit Altera DE2.
+A three-story cardboard elevator was developed, controlled by an FPGA and an Arduino Due. The FPGA code was written in VHDL using the Quartus II software, while the Arduino code was written in C++ using the Arduino IDE. Communication between them was established through the GPIO ports of the Altera DE2 kit.
 
 ![Montagem](Images/Elevator_assembly.png)
 
-## Máquina de Estados Finitos
-A máquina de estados finitos foi responsável por guiar a escrita do código através da separação dos estados e das condições de transição, além do que acontece dentro de cada estado. 
+## Finite State Machine
+The finite state machine (FSM) guided the code implementation by defining the states and their transition conditions, as well as the actions performed in each state.
 
 ![FSM](Images/FSM.png)
 
-Ad1, Ad2 e Ad3 referem-se aos andares de forma que possuem o valor ‘1’ quando o elevador se encontra naquele respectivo andar. B1, B2 e B3 referem-se aos botões de seleção dos andares e possuem o valor ‘1’ quando um andar é selecionado. M refere-se ao motor, M = 1 significa motor ligado sendo que o sentido pode ser horário ou anti horário, nessa ordem, equivalente ao elevador subir ou descer.
+Ad1, Ad2, and Ad3 refer to the floors, where the value ‘1’ indicates that the elevator is currently on that floor. B1, B2, and B3 refer to the floor selection buttons, where the value ‘1’ indicates that a floor has been selected. M refers to the motor, with M = 1 meaning the motor is on; the rotation direction can be clockwise or counterclockwise, corresponding to the elevator moving up or down, respectively.
 
-## Materiais
+## Materials
 
 - Arduino Due
 - FPGA
-- Motor CC
-- Sensor Ultrassônico
-- Transistor BC337
+- DC Motor
+- Ultrasonic Sensor
+- BC337 Transistor
 - Jumpers
-- Caixa de papelão
-- Palito de picolé
-- Engrenagem de plástico
-- Linha
+- Cardboard Box
+- Popsicle Stick
+- Plastic Gear
+- Thread
